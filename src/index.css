@@ -5,9 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mobile{
+  display: grid;
+  padding: 3rem 3rem;
+  background-color: azure;
+  max-width: fit-content;
 }
+
+.mobiles h1 h4{
+  padding: 0.10rem;
+} 
+
+@media screen and (min-width:768px) {
+  .mobile{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+
